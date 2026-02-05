@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  spaceport-dashboard:
+    build: .
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./app:/app/app  # Hot-reloading for development
+    environment:
+      - ENV=PRODUCTION
