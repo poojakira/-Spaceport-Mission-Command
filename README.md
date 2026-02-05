@@ -12,46 +12,30 @@ iii. Database: PostgreSQL (3NF Schema)
 
 iv. Containerization: Docker with Multi-Stage builds 
 
-Signature UI: Custom integrated footer "Invented by Pooja Kiran".
+v. Signature UI: Custom integrated footer "Invented by Pooja Kiran".
 # Repository Structure
-├── app/
-│   └── dashboard/
-│       ├── Home.py              # Main dashboard entry point
-│       ├── engine/              # Core logic & backend
-│       │   ├── agent.py         # AI Agent logic
-│       │   ├── ledger.py        # SHA-256 block creation
-│       │   ├── physics_ml.py    # ML Pipeline & physics simulation
-│       │   └── ui.py            # Custom CSS & signature rendering
-│       └── pages/               # Multi-page application modules
-│           ├── 1_Live_Telemetry.py
-│           ├── 2_Physics_ML.py
-│           ├── 3_Audit_Ledger.py
-│           └── 4_Mission_Control.py
-├── .env                         # Database configuration
-├── Dockerfile                   # Multi-stage optimized build
-├── docker-compose.yml           # Service orchestration
-├── requirements.txt             # Python dependencies
-└── schema.sql                   # PostgreSQL 3NF & Audit schema
+
+<img width="611" height="472" alt="image" src="https://github.com/user-attachments/assets/a58036a7-7228-45b9-ae01-28a3a1820f70" />
+
 
 
 # Installation & Setup
 
-1. Prerequisites:
-                   python -m venv venv
+**Prerequisites**:
    
-                   source venv/bin/activate  # On Windows: venv\Scripts\activate
-
-3. Local Requirements Installation
+                                  python -m venv venv
    
-To install the necessary dependencies locally, use the provided requirements.txt:
+                                  source venv/bin/activate  # On Windows: venv\Scripts\activate
 
-                                                                                 pip install -r requirements.txt
+**Local Requirements Installation**:   
 
-# Build and Start:
+                                  pip install -r requirements.txt
 
-                docker-compose up --build
+**Build and Start:**
 
-                docker run -p 8501:8501 spaceport-dashboard
+                                 docker-compose up --build
+
+                                 docker run -p 8501:8501 spaceport-dashboard
 
 # Key Features - Project Architecture
 
